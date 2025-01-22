@@ -1,0 +1,25 @@
+body {
+    background-color: rgba(201, 224, 213, 0.79);
+}
+
+.main_title {
+    color: green
+}
+
+
+#start_button, #stop_button {
+    width: 25vw;
+    height: 10vh;
+}
+
+#record_button {
+    width: 60vw;
+    height: 60vw;
+    border-radius: 100%;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#record_button:active {
+    box-shadow: 0px 0px 15px 5px rgb(192, 192, 192);
+}
