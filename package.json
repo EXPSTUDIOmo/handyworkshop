@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "express": "^4.21.2",
+    "extendable-media-recorder": "^9.2.19",
+    "extendable-media-recorder-wav-encoder": "^7.0.123",
     "ffmpeg": "^0.0.4",
     "ffmpeg-static": "^5.2.0",
     "fluent-ffmpeg": "^2.1.3",

@@ -38,102 +38,12 @@ socket.on('stop', () => {
 let startButton = document.getElementById('start_button');
 let stopButton = document.getElementById('stop_button');
 let connectButton = document.getElementById('connect_button');
+startButton.addEventListener('click', handlePress);
+stopButton.addEventListener('click', handleRelease);
 
 connectButton.addEventListener('click', () => {
     document.body.style.backgroundColor = "green";
 })
-
-
-
-// /*
-//     HANDY MICROPHONE NUTZEN
-// */
-
-// let mediaRecorder;
-// let audioChunks = [];
-// let isRecording = false;
-
-
-// async function startRecording() {
-
-//     document.body.style.backgroundColor = "red";
-
-//     // ask for user permission for audio
-//      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-//     mediaRecorder = new MediaRecorder(stream);
-  
-//     mediaRecorder.start();
-//     audioChunks = [];
-  
-//     mediaRecorder.ondataavailable = event => {
-//       audioChunks.push(event.data);
-//     };
-// }
-
-// async function stopRecording() {
-
-//     document.body.style.backgroundColor = "white";
-//     mediaRecorder.stop();
-
-//     mediaRecorder.onstop = async () => {
-//     const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
-//     const audioUrl = URL.createObjectURL(audioBlob);
-   
-//     // Send the recorded audio to the server
-//     await sendAudioToServer(audioBlob);
-//   };
-// }
-
-
-// startButton.addEventListener('click', startRecording);
-// stopButton.addEventListener('click', stopRecording);
-
-// startButton.addEventListener('touchstart', startRecording);  
-// stopButton.addEventListener('touchend', stopRecording);  
-
-
-// // Function to send the audio blob to the server
-// async function sendAudioToServer(audioBlob) {
-  
-//   const formData = new FormData();
-//   formData.append('audio', audioBlob, 'recording.wav');
-
-//   await fetch('/upload-audio', {
-//     method: 'POST',
-//     body: formData,
-//     headers: {
-//         'Accept': 'audio/wav'
-//       }
-//   });
-// }
-
-
-
-
-// /*
-//     WEBCAM Nutzen
-// */
-
-
-const videoInput = document.getElementById('videoInput');
-
-videoInput.addEventListener('change', async (event) => {
-    const file = event.target.files[0];
-    if (file) {
-        const formData = new FormData();
-        formData.append('video', file);
-
-        const response = await fetch('/upload-video', {
-            method: 'POST',
-            body: formData,
-        });
-
-        const message = await response.text();
-        console.log(message);
-    }
-});
-
-
 
 
 let mediaRecorder;
@@ -175,8 +85,10 @@ async function handleRelease() {
 
 // Function to send the audio blob to the server
 async function uploadAudioToServer(audioBlob) {
+    const mimeType = mediaRecorder.mimeType; 
+    const fileExtension = mimeType.split(';')[0].split('/')[1];
     const formData = new FormData();
-    formData.append('audio', audioBlob, 'recording.ogg');
+    formData.append('audio', audioBlob, `recording.${fileExtension}`);
 
     console.log("uploading audio")
 
@@ -190,5 +102,41 @@ async function uploadAudioToServer(audioBlob) {
   }
 
 
-startButton.addEventListener('click', handlePress);
-stopButton.addEventListener('click', handleRelease);
+
+
+
+
+
+
+
+
+  
+// /*
+//     WEBCAM Nutzen
+// */
+
+
+const videoInput = document.getElementById('videoInput');
+
+videoInput.addEventListener('change', async (event) => {
+    const file = event.target.files[0];
+    if (file) {
+        const formData = new FormData();
+        formData.append('video', file);
+
+        const response = await fetch('/upload-video', {
+            method: 'POST',
+            body: formData,
+        });
+
+        const message = await response.text();
+        console.log(message);
+    }
+});
+
+
+
+
+
+
+
