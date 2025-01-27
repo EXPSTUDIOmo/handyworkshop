@@ -1,18 +1,14 @@
 
 /*
-    Die Includes, Welche Pakete brauchen wir?
-    Für Basic-Setup:
-    -Express
-    -HTTP
-    -SocketIO
-    -(max-api)
+
+    Smartphone Workshop 2025
+
+    Node.js Backend Server
 */
 
 // Ein Modul für alle möglichen Webanwendungen, also für alles was HTTP Daten durch die Gegend schickt, Server, Parsers, Multiplexer etcpp.
 const express = require('express')
 
-// Not necessarily needed, allows Cross Origin Resource Sharing in case we ever need it
-const cors = require('cors')
 
 // Das HTTP Modul, Grund-Funktionen um Hyper Text Transfer Protocol zu benutzen
 const http = require('http')
@@ -29,7 +25,7 @@ const path = require('path');
     Erstellt den HTTP Server und SocketIO Server
 */
 let app = express();
-app.use(cors());
+
 
 let httpServer = http.createServer(app);
 socketIO = new Server(httpServer);     
@@ -85,6 +81,14 @@ socketIO.on('connection', (socket) => {
     socket.on('client', (number) => {
         Max.outlet("Client says: ", number);
     });
+
+    socket.on('orientation', (orientationEvent) => {
+        Max.outlet('orientation', socket.id,  orientationEvent.alpha, orientationEvent.beta, orientationEvent.gamma);
+    })
+
+    socket.on('motion', (motionEvent) => {
+        Max.outlet('motion', socket.id, motionEvent.acc_gx, motionEvent.acc_gy, motionEvent.acc_gz, motionEvent.acc_x, motionEvent.acc_y, motionEvent.acc_z, motionEvent.rot_a, motionEvent.rot_b, motionEvent.rot_g);
+    })
 });
 
 
