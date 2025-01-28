@@ -13,9 +13,6 @@ const express = require('express')
 // Das HTTP Modul, Grund-Funktionen um Hyper Text Transfer Protocol zu benutzen
 const http = require('http')
 
-// Der Socket.IO Server (client auf der anderen Seite). Stellt eine Websocket Verbindung zwischen Client und Server da um eine bidirektionale Verbindung zu haben
-const { Server } = require("socket.io");
-
 // Spezielles Modul für das Benutzen innerhalb von MaxMSP, gibt Funktionen zur Kommunikation mit Max wie Max.outlet oder Max.post
 const Max = require('max-api');
 
@@ -26,15 +23,12 @@ const path = require('path');
 */
 let app = express();
 
-
 let httpServer = http.createServer(app);
-socketIO = new Server(httpServer);     
 
 const PORT = 5005
 httpServer.listen(PORT, () => {
     console.log("HTTP Server ist aktiv und wartet auf Kunden auf Port ", PORT)
 });
-
 
 /*  
     Express Middleware
@@ -44,7 +38,24 @@ httpServer.listen(PORT, () => {
     In unserem Falle einfach: "Für alle Anfragen jeglicher Art, nutze den Ordner "public" um Daten zu suchen"
     Ähnlich wie Max filepath Zeug, das heißt wenn ein client "/cat_picture.jpg" schickt, sucht express im ordner public nach cat_picture.jpg
 */
+
+
+// app.get('/', (req, res) => {
+//     res.send('Hallo Experimentalstudio!')
+//   })
+
+
 app.use(express.static('public'));
+
+
+
+
+
+// Der Socket.IO Server (client auf der anderen Seite). Stellt eine Websocket Verbindung zwischen Client und Server da um eine bidirektionale Verbindung zu haben
+const { Server } = require("socket.io");
+
+socketIO = new Server(httpServer);    
+
 
 
 
