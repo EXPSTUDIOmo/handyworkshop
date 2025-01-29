@@ -1,3 +1,11 @@
+/*
+  CLIENT
+*/
+
+
+
+
+
 /* Instanziere ein neues socket.io client Object. 
    Hierfür wird die socket.io.js client datei benötigt. Diese kann auf unterschiedliche Art eingebunden werden.
    In diesem Falle ist sie ganz simpel als lokale datei im Ordner vorhanden und wird im index.html aufgerufen
@@ -125,9 +133,10 @@ async function uploadAudioToServer(audioBlob) {
 
 
 
-// /*
-//     WEBCAM Nutzen um Videodatein aufzunehmen und an den Server zu schicken
-// */
+
+/*
+    WEBCAM Nutzen um Videodatein aufzunehmen und an den Server zu schicken
+*/
 
 
 const videoInput = document.getElementById('videoInput');
@@ -151,7 +160,7 @@ videoInput.addEventListener('change', async (event) => {
 
 
 /*
-Sensoren nutzen für Orientation & Motion
+  Sensoren nutzen für Orientation & Motion
 */
 
 
@@ -224,3 +233,9 @@ motion_button.onclick = function(e) {
 
 
 
+
+
+
+
+//console.log('3' - 1);
+// console.log('3' + 1);
