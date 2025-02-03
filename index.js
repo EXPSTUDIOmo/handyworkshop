@@ -1,5 +1,6 @@
 
 /*
+    SERVER
 
     Smartphone Workshop 2025
 
@@ -124,6 +125,10 @@ socketIO.on('connection', (socket) => {
 
     socket.on('motion', (motionEvent) => {
         Max.outlet('motion', socket.id, motionEvent.acc_gx, motionEvent.acc_gy, motionEvent.acc_gz, motionEvent.acc_x, motionEvent.acc_y, motionEvent.acc_z, motionEvent.rot_a, motionEvent.rot_b, motionEvent.rot_g);
+    })
+
+    socket.on('hallo_server', (nachricht) => {
+        Max.outlet("client", nachricht);
     })
 });
 
