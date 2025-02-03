@@ -40,13 +40,70 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "ezdac~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 667.333333333333485, 87.0, 45.0, 45.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 667.333333333333485, 53.0, 70.0, 22.0 ],
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 58.0, 59.0, 150.0, 20.0 ],
+					"text" : "Server Start / Stop"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 332.666666666666742, 67.0, 150.0, 20.0 ],
+					"text" : "Für Audio auf Handys"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-5",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 64.0, 478.0, 161.0, 47.0 ],
+					"text" : "nicht wundern, 1. Audio-Upload sendet  nur Stille, Erklärung im Code"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-40",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 588.0, 548.0, 244.0, 22.0 ],
-					"text" : "-0.3 0.5 9.5 0 0 -0.3 -6 15.6 0.2"
+					"text" : "-2.4 1.9 10.5 -0.1 -0.3 1.2 -14.2 -2 -1.4"
 				}
 
 			}
@@ -167,11 +224,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-20",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 182.0, 255.0, 163.0, 20.0 ],
-					"text" : "Lieber in VS Code ausführen"
+					"patching_rect" : [ 114.0, 245.0, 265.0, 33.0 ],
+					"text" : "Lieber in VS Code ausführen, geht aber theoretisch auch hier"
 				}
 
 			}
@@ -249,7 +307,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 211.0, 799.0, 400.0, 214.0 ],
+					"patching_rect" : [ 211.0, 799.0, 342.0, 180.0 ],
 					"sync" : 1
 				}
 
@@ -371,7 +429,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 261.5, 92.0, 31.0, 22.0 ],
+					"patching_rect" : [ 366.666666666666742, 92.0, 31.0, 22.0 ],
 					"text" : "stop"
 				}
 
@@ -383,7 +441,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 227.5, 92.0, 32.0, 22.0 ],
+					"patching_rect" : [ 332.666666666666742, 92.0, 32.0, 22.0 ],
 					"text" : "start"
 				}
 
@@ -395,7 +453,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 196.0, 277.0, 149.0, 22.0 ],
+					"patching_rect" : [ 165.0, 280.0, 149.0, 22.0 ],
 					"text" : "script npm install socket.io"
 				}
 
@@ -407,7 +465,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 272.0, 371.0, 79.0, 22.0 ],
+					"patching_rect" : [ 144.0, 376.0, 79.0, 22.0 ],
 					"text" : "route running"
 				}
 
@@ -469,8 +527,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -482,7 +538,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 341.5, 406.0, 422.0, 406.0, 422.0, 163.0, 441.5, 163.0 ],
+					"midpoints" : [ 213.5, 406.0, 422.0, 406.0, 422.0, 163.0, 441.5, 163.0 ],
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -541,7 +597,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"midpoints" : [ 237.0, 237.0, 61.5, 237.0 ],
+					"midpoints" : [ 342.166666666666742, 237.0, 61.5, 237.0 ],
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -549,7 +605,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"midpoints" : [ 271.0, 237.0, 61.5, 237.0 ],
+					"midpoints" : [ 376.166666666666742, 237.0, 61.5, 237.0 ],
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -622,6 +678,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-40", 1 ],
 					"source" : [ "obj-38", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
