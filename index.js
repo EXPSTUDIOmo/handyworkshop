@@ -12,8 +12,6 @@
     Am Anfang des Codes stehen meistens die includes (require), damit man sieht welche Pakete benutzt werden
 */
 
-// Spezielles Modul für das Benutzen innerhalb von MaxMSP, gibt Funktionen zur Kommunikation mit Max wie Max.outlet oder Max.post
-// Ohne funktioniert der Code nicht in Max. Mit diesem Modul funktioniert der Code NUR mit Max
 const Max = require('max-api');
 
 // Ein Modul für alle möglichen Webanwendungen, also für alles was  HTTP-Daten durch die Gegend schickt, Server, Parsers, etcpp.
