@@ -2,42 +2,16 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 8,
-			"minor" : 6,
-			"revision" : 2,
+			"major" : 9,
+			"minor" : 0,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 617.0, 101.0, 861.0, 789.0 ],
-		"bglocked" : 0,
-		"openinpresentation" : 0,
-		"default_fontsize" : 12.0,
-		"default_fontface" : 0,
-		"default_fontname" : "Arial",
-		"gridonopen" : 1,
+		"rect" : [ 201.0, 101.0, 1223.0, 789.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 1,
-		"objectsnaponopen" : 1,
-		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
-		"lefttoolbarpinned" : 0,
-		"toptoolbarpinned" : 0,
-		"righttoolbarpinned" : 0,
-		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 0,
-		"tallnewobj" : 0,
-		"boxanimatetime" : 200,
-		"enablehscroll" : 1,
-		"enablevscroll" : 1,
-		"devicewidth" : 0.0,
-		"description" : "",
-		"digest" : "",
-		"tags" : "",
-		"style" : "",
-		"subpatcher_template" : "",
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-5",
@@ -45,7 +19,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 65.0, 495.0, 150.0, 47.0 ],
+					"patching_rect" : [ 65.0, 647.0, 150.0, 47.0 ],
 					"text" : "Nicht wundern 1. Audio upload ist muted, Erklärung im Code"
 				}
 
@@ -69,7 +43,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 588.0, 548.0, 244.0, 22.0 ],
+					"patching_rect" : [ 639.0, 699.0, 244.0, 22.0 ],
 					"text" : "-2.4 1.9 10.5 -0.1 -0.3 1.2 -14.2 -2 -1.4"
 				}
 
@@ -81,7 +55,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 533.0, 486.0, 55.0, 22.0 ],
+					"patching_rect" : [ 584.0, 637.0, 55.0, 22.0 ],
 					"text" : "zl.slice 1"
 				}
 
@@ -95,7 +69,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 482.0, 583.0, 50.0, 63.0 ],
+					"patching_rect" : [ 530.666666666666742, 740.0, 50.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.dial[2]",
@@ -121,7 +95,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 421.0, 583.0, 50.0, 63.0 ],
+					"patching_rect" : [ 469.666666666666686, 740.0, 50.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.dial[1]",
@@ -147,7 +121,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 360.0, 583.0, 50.0, 63.0 ],
+					"patching_rect" : [ 408.666666666666686, 740.0, 50.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.dial",
@@ -171,7 +145,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "float", "float", "float" ],
-					"patching_rect" : [ 360.0, 538.0, 141.0, 22.0 ],
+					"patching_rect" : [ 408.666666666666686, 695.0, 141.0, 22.0 ],
 					"text" : "unpack f f f"
 				}
 
@@ -183,7 +157,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 324.0, 497.0, 55.0, 22.0 ],
+					"patching_rect" : [ 372.666666666666686, 651.0, 55.0, 22.0 ],
 					"text" : "zl.slice 1"
 				}
 
@@ -207,7 +181,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 211.0, 649.0, 55.0, 22.0 ],
+					"patching_rect" : [ 211.0, 801.0, 55.0, 22.0 ],
 					"text" : "pipe 300"
 				}
 
@@ -219,7 +193,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 324.0, 687.0, 35.0, 22.0 ],
+					"patching_rect" : [ 324.0, 839.0, 35.0, 22.0 ],
 					"text" : "clear"
 				}
 
@@ -242,7 +216,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 211.0, 687.0, 111.0, 22.0 ],
+					"patching_rect" : [ 211.0, 839.0, 111.0, 22.0 ],
 					"text" : "clear, append $1, 1"
 				}
 
@@ -263,7 +237,38 @@
 					"outlettype" : [ "jit_matrix", "", "dictionary" ],
 					"output_texture" : 0,
 					"parameter_enable" : 0,
-					"patching_rect" : [ 211.0, 737.0, 448.0, 37.0 ]
+					"patching_rect" : [ 211.0, 889.0, 448.0, 37.0 ],
+					"saved_attribute_attributes" : 					{
+						"candicane2" : 						{
+							"expression" : ""
+						}
+,
+						"candicane3" : 						{
+							"expression" : ""
+						}
+,
+						"candicane4" : 						{
+							"expression" : ""
+						}
+,
+						"candicane5" : 						{
+							"expression" : ""
+						}
+,
+						"candicane6" : 						{
+							"expression" : ""
+						}
+,
+						"candicane7" : 						{
+							"expression" : ""
+						}
+,
+						"candicane8" : 						{
+							"expression" : ""
+						}
+
+					}
+
 				}
 
 			}
@@ -274,7 +279,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 211.0, 799.0, 342.0, 180.0 ],
+					"patching_rect" : [ 211.0, 951.0, 342.0, 180.0 ],
 					"sync" : 1
 				}
 
@@ -285,7 +290,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 101.0, 895.0, 55.0, 22.0 ],
+					"patching_rect" : [ 101.0, 1047.0, 55.0, 22.0 ],
 					"text" : "dac~ 1 2"
 				}
 
@@ -299,7 +304,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 101.0, 740.0, 48.0, 136.0 ],
+					"patching_rect" : [ 101.0, 892.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -324,7 +329,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 103.0, 695.0, 60.0, 22.0 ],
+					"patching_rect" : [ 103.0, 847.0, 60.0, 22.0 ],
 					"text" : "play~ test"
 				}
 
@@ -336,7 +341,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "start" ],
-					"patching_rect" : [ 103.0, 619.0, 39.0, 22.0 ],
+					"patching_rect" : [ 103.0, 771.0, 39.0, 22.0 ],
 					"text" : "t start"
 				}
 
@@ -348,7 +353,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 53.0, 543.0, 95.0, 22.0 ],
+					"patching_rect" : [ 53.0, 695.0, 95.0, 22.0 ],
 					"text" : "prepend replace"
 				}
 
@@ -360,7 +365,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 52.0, 443.0, 660.333333333333371, 22.0 ],
+					"patching_rect" : [ 52.0, 595.0, 660.333333333333371, 22.0 ],
 					"text" : "route audiofile videofile orientation motion"
 				}
 
@@ -372,7 +377,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 53.0, 584.0, 69.0, 22.0 ],
+					"patching_rect" : [ 53.0, 736.0, 69.0, 22.0 ],
 					"text" : "buffer~ test"
 				}
 
@@ -441,7 +446,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 432.0, 178.0, 400.0, 220.0 ],
+					"patching_rect" : [ 602.0, 196.0, 400.0, 220.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -482,12 +487,17 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
-					"text" : "node.script index.js"
+					"text" : "node.script index.js",
+					"textfile" : 					{
+						"filename" : "index.js",
+						"flags" : 0,
+						"embed" : 0,
+						"autowatch" : 1
+					}
+
 				}
 
 			}
@@ -495,7 +505,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 213.5, 406.0, 422.0, 406.0, 422.0, 163.0, 441.5, 163.0 ],
+					"midpoints" : [ 213.5, 406.0, 422.0, 406.0, 422.0, 160.0390625, 611.5, 160.0390625 ],
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -697,6 +707,7 @@
 
 			}
  ],
+		"originid" : "pat-6",
 		"parameters" : 		{
 			"obj-14" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-33" : [ "live.dial", "live.dial", 0 ],

@@ -1,19 +1,15 @@
 
 /*
-    SERVER
-
-    Smartphone Workshop 2025
-
+    index.js
     Node.js Server
-
     Der Server hosted unsere Client App. Nachdem er gestartet wurde hört er auf seinem Port, ob es Clients gibt.
-
+    Dieser Node.js Server wird durch das MaxMSP node.script object ins Leben gerufen und nicht direkt selber gestartet
 */
 
 
+
 /*
-    Am Anfang des Codes stehen meistens die includes (require), damit man sieht welche Pakete benutzt werden und 
-    damit man die Pakete als Variablen zur Verfügung hat.
+    Am Anfang des Codes stehen meistens die includes (require), damit man sieht welche Pakete benutzt werden
 */
 
 // Spezielles Modul für das Benutzen innerhalb von MaxMSP, gibt Funktionen zur Kommunikation mit Max wie Max.outlet oder Max.post
@@ -43,7 +39,7 @@ const { Server } = require("socket.io");
 let app = express();
 let httpServer = http.createServer(app);
 
-const PORT = 5005
+const PORT = 80
 httpServer.listen(PORT, () => {
     console.log("HTTP Server ist aktiv und wartet auf Kunden auf Port ", PORT)
 });
@@ -131,6 +127,13 @@ socketIO.on('connection', (socket) => {
         Max.outlet("client", nachricht);
     })
 });
+
+
+
+
+
+
+
 
 
 
