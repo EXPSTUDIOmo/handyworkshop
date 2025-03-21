@@ -3,27 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Handy Workshop</title>
+    <title>ZKM Workshop</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="client.js"></script>
     <script src="socket.io.js"></script>
     <script src="howler.min.js"></script>
 </head>
 <body>
-    <h1 class="main_title">Hallo Handies</h1>
+    <h1 class="main_title">Client App</h1>
     <button id="connect_button">CONNECT BUTTON</button>
-    <div id="container_microphone">
-        <h3>Microphone</h3>
-        <button id="start_button">Start</button>
-        <button id="stop_button">Stop</button>
-    </div>
-    <div id="container_webcam">
-        <h3>Webcam</h3>
-        <input type="file" accept="video/*" id="videoInput" capture="environment">
-    </div>
-    <div id="container_motion">
-        <h3>Motion / Orientation</h3>
-        <button id="motion_button">Start Motion Sensors</button>
+    <div class="content">
+        <button id="start_button">PLAY</button>
     </div>
 </body>
 </html>

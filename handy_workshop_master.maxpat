@@ -10,120 +10,121 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 201.0, 101.0, 1223.0, 789.0 ],
+		"rect" : [ 143.0, 100.0, 1283.0, 790.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-14",
+					"id" : "obj-66",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 232.0, 508.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-61",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 52.0, 595.0, 79.0, 22.0 ],
+					"text" : "prepend note"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-59",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 446.0, 595.0, 55.0, 22.0 ],
-					"text" : "dac~ 1 2"
+					"patching_rect" : [ 531.0, 854.0, 87.0, 22.0 ],
+					"text" : "mo.waldPlayer"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-58",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 14,
+					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
+					"patching_rect" : [ 52.0, 633.0, 155.5, 22.0 ],
+					"text" : "poly~ mo.waldPlayer 16"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 52.0, 511.0, 22.0, 22.0 ],
+					"text" : "t b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 669.0, 780.0, 180.0, 22.0 ],
+					"text" : "mc.dac~ 9 10 11 12 13 14 15 16"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"lastchannelcount" : 8,
+					"maxclass" : "mc.live.gain~",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "multichannelsignal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 669.0, 626.0, 150.0, 129.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 672.0, 626.0, 150.0, 129.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "mc.live.gain~[1]",
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 3,
+							"parameter_shortname" : "Atmo",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "mc.live.gain~[1]"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"basictuning" : 440,
-					"clipheight" : 29.0,
+					"channelcount" : 8,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "SSD-Sys:/Users/swrexperimentalstudio/Documents/GitHub/handyworkshop/public/samples/wald1.mp3",
-								"filename" : "wald1.mp3",
+								"absolutepath" : "ForestAtmo.wav",
+								"filename" : "ForestAtmo.wav",
 								"filekind" : "audiofile",
-								"id" : "u593003015",
-								"loop" : 0,
+								"id" : "u506008840",
+								"selection" : [ 0.451977401129944, 1.0 ],
+								"loop" : 1,
 								"content_state" : 								{
-
-								}
-
-							}
-, 							{
-								"absolutepath" : "SSD-Sys:/Users/swrexperimentalstudio/Documents/GitHub/handyworkshop/public/samples/wald2.mp3",
-								"filename" : "wald2.mp3",
-								"filekind" : "audiofile",
-								"id" : "u492003020",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
-, 							{
-								"absolutepath" : "SSD-Sys:/Users/swrexperimentalstudio/Documents/GitHub/handyworkshop/public/samples/wald3.mp3",
-								"filename" : "wald3.mp3",
-								"filekind" : "audiofile",
-								"id" : "u906003025",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
-, 							{
-								"absolutepath" : "SSD-Sys:/Users/swrexperimentalstudio/Documents/GitHub/handyworkshop/public/samples/wald4.mp3",
-								"filename" : "wald4.mp3",
-								"filekind" : "audiofile",
-								"id" : "u914003030",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
-, 							{
-								"absolutepath" : "SSD-Sys:/Users/swrexperimentalstudio/Documents/GitHub/handyworkshop/public/samples/wald5.mp3",
-								"filename" : "wald5.mp3",
-								"filekind" : "audiofile",
-								"id" : "u896003035",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
-, 							{
-								"absolutepath" : "SSD-Sys:/Users/swrexperimentalstudio/Documents/GitHub/handyworkshop/public/samples/wald6.mp3",
-								"filename" : "wald6.mp3",
-								"filekind" : "audiofile",
-								"id" : "u549003040",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
-, 							{
-								"absolutepath" : "SSD-Sys:/Users/swrexperimentalstudio/Documents/GitHub/handyworkshop/public/samples/wald7.mp3",
-								"filename" : "wald7.mp3",
-								"filekind" : "audiofile",
-								"id" : "u693003045",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
-, 							{
-								"absolutepath" : "SSD-Sys:/Users/swrexperimentalstudio/Documents/GitHub/handyworkshop/public/samples/wald8.mp3",
-								"filename" : "wald8.mp3",
-								"filekind" : "audiofile",
-								"id" : "u052003050",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
-, 							{
-								"absolutepath" : "SSD-Sys:/Users/swrexperimentalstudio/Documents/GitHub/handyworkshop/public/samples/wald9.mp3",
-								"filename" : "wald9.mp3",
-								"filekind" : "audiofile",
-								"id" : "u918003055",
-								"loop" : 0,
-								"content_state" : 								{
-
+									"loop" : 1
 								}
 
 							}
@@ -132,16 +133,16 @@
 ,
 					"followglobaltempo" : 0,
 					"formantcorrection" : 0,
-					"id" : "obj-13",
-					"maxclass" : "playlist~",
+					"id" : "obj-35",
+					"maxclass" : "mc.playlist~",
 					"mode" : "basic",
 					"numinlets" : 1,
-					"numoutlets" : 5,
+					"numoutlets" : 4,
 					"originallength" : [ 0.0, "ticks" ],
 					"originaltempo" : 120.0,
-					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+					"outlettype" : [ "multichannelsignal", "signal", "", "dictionary" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 257.0, 474.0, 150.0, 270.0 ],
+					"patching_rect" : [ 669.0, 567.0, 232.0, 31.0 ],
 					"pitchcorrection" : 0,
 					"quality" : "basic",
 					"saved_attribute_attributes" : 					{
@@ -181,13 +182,184 @@
 			}
 , 			{
 				"box" : 				{
+					"id" : "obj-63",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 428.0, 780.0, 134.0, 22.0 ],
+					"text" : "mc.dac~ 1 2 3 4 5 6 7 8"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-62",
+					"lastchannelcount" : 8,
+					"maxclass" : "mc.live.gain~",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "multichannelsignal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 428.0, 626.0, 150.0, 129.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 70.5, 350.0, 150.0, 129.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "mc.live.gain~",
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 3,
+							"parameter_shortname" : "Atmo",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "mc.live.gain~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"basictuning" : 440,
+					"channelcount" : 8,
+					"data" : 					{
+						"clips" : [ 							{
+								"absolutepath" : "ForestAtmo.wav",
+								"filename" : "ForestAtmo.wav",
+								"filekind" : "audiofile",
+								"id" : "u506008840",
+								"loop" : 1,
+								"content_state" : 								{
+									"loop" : 1
+								}
+
+							}
+ ]
+					}
+,
+					"followglobaltempo" : 0,
+					"formantcorrection" : 0,
+					"id" : "obj-60",
+					"maxclass" : "mc.playlist~",
+					"mode" : "basic",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"originallength" : [ 0.0, "ticks" ],
+					"originaltempo" : 120.0,
+					"outlettype" : [ "multichannelsignal", "signal", "", "dictionary" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 428.0, 567.0, 232.0, 31.0 ],
+					"pitchcorrection" : 0,
+					"quality" : "basic",
+					"saved_attribute_attributes" : 					{
+						"candicane2" : 						{
+							"expression" : ""
+						}
+,
+						"candicane3" : 						{
+							"expression" : ""
+						}
+,
+						"candicane4" : 						{
+							"expression" : ""
+						}
+,
+						"candicane5" : 						{
+							"expression" : ""
+						}
+,
+						"candicane6" : 						{
+							"expression" : ""
+						}
+,
+						"candicane7" : 						{
+							"expression" : ""
+						}
+,
+						"candicane8" : 						{
+							"expression" : ""
+						}
+
+					}
+,
+					"timestretch" : [ 0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 14,
+					"numoutlets" : 0,
+					"patching_rect" : [ 53.0, 842.0, 207.0, 22.0 ],
+					"text" : "dac~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"channels" : 14,
+					"id" : "obj-15",
+					"lastchannelcount" : 0,
+					"maxclass" : "live.gain~",
+					"numinlets" : 14,
+					"numoutlets" : 17,
+					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 52.0, 683.0, 208.0, 126.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "live.gain~[1]",
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 3,
+							"parameter_shortname" : "live.gain~[1]",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "live.gain~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-33",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 52.0, 474.0, 227.0, 22.0 ],
+					"text" : "route sound atmo"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 52.0, 545.0, 122.0, 22.0 ],
+					"text" : "random @range 1 10"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 722.0, 520.0, 24.0, 24.0 ]
+					"patching_rect" : [ 864.0, 459.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -198,7 +370,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 735.0, 564.0, 32.0, 22.0 ],
+					"patching_rect" : [ 864.0, 496.0, 32.0, 22.0 ],
 					"text" : "gate"
 				}
 
@@ -220,7 +392,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 0.0, 1000.0, 708.800000000000068 ],
+						"rect" : [ 59.0, 119.0, 1000.0, 709.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"boxes" : [ 							{
 								"box" : 								{
@@ -725,10 +897,10 @@
 
 							}
  ],
-						"originid" : "pat-40"
+						"originid" : "pat-8"
 					}
 ,
-					"patching_rect" : [ 735.0, 594.0, 84.0, 22.0 ],
+					"patching_rect" : [ 864.0, 526.0, 84.0, 22.0 ],
 					"text" : "p ADVANCED"
 				}
 
@@ -850,6 +1022,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -882,8 +1056,17 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"order" : 1,
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
-					"midpoints" : [ 61.5, 457.70703125, 757.5, 457.70703125 ],
+					"midpoints" : [ 61.5, 422.8828125, 886.5, 422.8828125 ],
+					"order" : 0,
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -897,17 +1080,99 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 1 ],
-					"order" : 0,
-					"source" : [ "obj-13", 0 ]
+					"destination" : [ "obj-24", 13 ],
+					"source" : [ "obj-15", 13 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
-					"order" : 1,
-					"source" : [ "obj-13", 0 ]
+					"destination" : [ "obj-24", 12 ],
+					"source" : [ "obj-15", 12 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 11 ],
+					"source" : [ "obj-15", 11 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 10 ],
+					"source" : [ "obj-15", 10 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 9 ],
+					"source" : [ "obj-15", 9 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 8 ],
+					"source" : [ "obj-15", 8 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 7 ],
+					"source" : [ "obj-15", 7 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 6 ],
+					"source" : [ "obj-15", 6 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 5 ],
+					"source" : [ "obj-15", 5 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 4 ],
+					"source" : [ "obj-15", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 3 ],
+					"source" : [ "obj-15", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 2 ],
+					"source" : [ "obj-15", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 1 ],
+					"source" : [ "obj-15", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-15", 0 ]
 				}
 
 			}
@@ -929,6 +1194,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-61", 0 ],
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"midpoints" : [ 134.5, 126.5, 61.5, 126.5 ],
 					"source" : [ "obj-28", 0 ]
@@ -939,6 +1211,178 @@
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"midpoints" : [ 165.5, 507.0, 414.0, 507.0, 414.0, 507.4765625, 678.5, 507.4765625 ],
+					"order" : 0,
+					"source" : [ "obj-33", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
+					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-60", 0 ],
+					"midpoints" : [ 165.5, 507.0, 437.5, 507.0 ],
+					"order" : 1,
+					"source" : [ "obj-33", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 13 ],
+					"source" : [ "obj-58", 13 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 12 ],
+					"source" : [ "obj-58", 12 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 11 ],
+					"source" : [ "obj-58", 11 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 10 ],
+					"source" : [ "obj-58", 10 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 9 ],
+					"source" : [ "obj-58", 9 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 8 ],
+					"source" : [ "obj-58", 8 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 7 ],
+					"source" : [ "obj-58", 7 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 6 ],
+					"source" : [ "obj-58", 6 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 5 ],
+					"source" : [ "obj-58", 5 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 4 ],
+					"source" : [ "obj-58", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 3 ],
+					"source" : [ "obj-58", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 2 ],
+					"source" : [ "obj-58", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 1 ],
+					"source" : [ "obj-58", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-62", 0 ],
+					"source" : [ "obj-60", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-58", 0 ],
+					"source" : [ "obj-61", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-63", 0 ],
+					"source" : [ "obj-62", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
+					"source" : [ "obj-66", 0 ]
 				}
 
 			}
@@ -959,10 +1403,13 @@
  ],
 		"originid" : "pat-6",
 		"parameters" : 		{
+			"obj-15" : [ "live.gain~[1]", "live.gain~[1]", 0 ],
+			"obj-37" : [ "mc.live.gain~[1]", "Atmo", 0 ],
 			"obj-5::obj-14" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-5::obj-33" : [ "live.dial", "live.dial", 0 ],
 			"obj-5::obj-34" : [ "live.dial[1]", "live.dial", 0 ],
 			"obj-5::obj-35" : [ "live.dial[2]", "live.dial", 0 ],
+			"obj-62" : [ "mc.live.gain~", "Atmo", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
@@ -976,6 +1423,13 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "ForestAtmo.wav",
+				"bootpath" : "~/Documents/GitHub/handyworkshop",
+				"patcherrelativepath" : ".",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "fit_jweb_to_bounds.js",
 				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
 				"type" : "TEXT",
@@ -986,6 +1440,13 @@
 				"bootpath" : "~/Documents/GitHub/handyworkshop",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mo.waldPlayer.maxpat",
+				"bootpath" : "~/Documents/GitHub/handyworkshop/maxpatches",
+				"patcherrelativepath" : "./maxpatches",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
