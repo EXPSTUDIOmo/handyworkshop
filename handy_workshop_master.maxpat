@@ -14,13 +14,25 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-66",
+					"id" : "obj-78",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 232.0, 508.0, 24.0, 24.0 ]
+					"patching_rect" : [ 360.0, 414.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-71",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 720.0, 502.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -31,7 +43,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 52.0, 595.0, 79.0, 22.0 ],
+					"patching_rect" : [ 53.5, 539.5, 79.0, 22.0 ],
 					"text" : "prepend note"
 				}
 
@@ -54,7 +66,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 14,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 52.0, 633.0, 155.5, 22.0 ],
+					"patching_rect" : [ 53.5, 577.5, 155.5, 22.0 ],
 					"text" : "poly~ mo.waldPlayer 16"
 				}
 
@@ -66,7 +78,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 52.0, 511.0, 22.0, 22.0 ],
+					"patching_rect" : [ 53.5, 455.5, 22.0, 22.0 ],
 					"text" : "t b"
 				}
 
@@ -294,8 +306,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 14,
 					"numoutlets" : 0,
-					"patching_rect" : [ 53.0, 842.0, 207.0, 22.0 ],
-					"text" : "dac~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14"
+					"patching_rect" : [ 53.5, 800.0, 247.0, 22.0 ],
+					"text" : "dac~ 1 43 35 27 5 36 31 8 35 10 11 35 20 33"
 				}
 
 			}
@@ -309,7 +321,7 @@
 					"numoutlets" : 17,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 52.0, 683.0, 208.0, 126.0 ],
+					"patching_rect" : [ 53.5, 627.5, 208.0, 126.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~[1]",
@@ -334,7 +346,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 52.0, 474.0, 227.0, 22.0 ],
+					"patching_rect" : [ 53.5, 418.5, 227.0, 22.0 ],
 					"text" : "route sound atmo"
 				}
 
@@ -346,7 +358,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 52.0, 545.0, 122.0, 22.0 ],
+					"patching_rect" : [ 53.5, 489.5, 122.0, 22.0 ],
 					"text" : "random @range 1 10"
 				}
 
@@ -897,7 +909,7 @@
 
 							}
  ],
-						"originid" : "pat-8"
+						"originid" : "pat-562"
 					}
 ,
 					"patching_rect" : [ 864.0, 526.0, 84.0, 22.0 ],
@@ -912,7 +924,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 114.0, 245.0, 265.0, 33.0 ],
+					"patching_rect" : [ 59.0, 189.0, 265.0, 33.0 ],
 					"text" : "Lieber in VS Code ausführen, geht aber theoretisch auch hier"
 				}
 
@@ -948,7 +960,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 165.0, 280.0, 149.0, 22.0 ],
+					"patching_rect" : [ 102.5, 261.0, 149.0, 22.0 ],
 					"text" : "script npm install socket.io"
 				}
 
@@ -1022,8 +1034,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -1065,7 +1075,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
-					"midpoints" : [ 61.5, 422.8828125, 886.5, 422.8828125 ],
+					"midpoints" : [ 61.5, 362.26953125, 886.5, 362.26953125 ],
 					"order" : 0,
 					"source" : [ "obj-10", 0 ]
 				}
@@ -1217,7 +1227,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
-					"midpoints" : [ 165.5, 507.0, 414.0, 507.0, 414.0, 507.4765625, 678.5, 507.4765625 ],
+					"midpoints" : [ 167.0, 478.4453125, 414.0, 478.4453125, 414.0, 507.4765625, 678.5, 507.4765625 ],
 					"order" : 0,
 					"source" : [ "obj-33", 1 ]
 				}
@@ -1233,7 +1243,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-60", 0 ],
-					"midpoints" : [ 165.5, 507.0, 437.5, 507.0 ],
+					"midpoints" : [ 167.0, 468.8515625, 437.5, 468.8515625 ],
 					"order" : 1,
 					"source" : [ "obj-33", 1 ]
 				}
@@ -1381,15 +1391,31 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-39", 0 ],
-					"source" : [ "obj-66", 0 ]
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-7", 0 ]
+					"destination" : [ "obj-35", 0 ],
+					"order" : 0,
+					"source" : [ "obj-71", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-60", 0 ],
+					"order" : 1,
+					"source" : [ "obj-71", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
+					"source" : [ "obj-78", 0 ]
 				}
 
 			}
@@ -1401,7 +1427,7 @@
 
 			}
  ],
-		"originid" : "pat-6",
+		"originid" : "pat-526",
 		"parameters" : 		{
 			"obj-15" : [ "live.gain~[1]", "live.gain~[1]", 0 ],
 			"obj-37" : [ "mc.live.gain~[1]", "Atmo", 0 ],
