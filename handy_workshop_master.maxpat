@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 143.0, 100.0, 1283.0, 790.0 ],
+		"rect" : [ 34.0, 100.0, 1044.0, 792.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -78,7 +78,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 53.5, 455.5, 22.0, 22.0 ],
+					"patching_rect" : [ 53.60000079870224, 436.000006496906281, 22.0, 22.0 ],
 					"text" : "t b"
 				}
 
@@ -346,7 +346,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 53.5, 418.5, 227.0, 22.0 ],
+					"patching_rect" : [ 53.5, 405.0, 227.0, 22.0 ],
 					"text" : "route sound atmo"
 				}
 
@@ -909,7 +909,7 @@
 
 							}
  ],
-						"originid" : "pat-562"
+						"originid" : "pat-1003"
 					}
 ,
 					"patching_rect" : [ 864.0, 526.0, 84.0, 22.0 ],
@@ -1034,6 +1034,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -1427,7 +1429,7 @@
 
 			}
  ],
-		"originid" : "pat-526",
+		"originid" : "pat-967",
 		"parameters" : 		{
 			"obj-15" : [ "live.gain~[1]", "live.gain~[1]", 0 ],
 			"obj-37" : [ "mc.live.gain~[1]", "Atmo", 0 ],
