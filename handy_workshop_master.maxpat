@@ -2,43 +2,100 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 8,
-			"minor" : 6,
-			"revision" : 2,
+			"major" : 9,
+			"minor" : 0,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 617.0, 101.0, 861.0, 789.0 ],
-		"bglocked" : 0,
-		"openinpresentation" : 0,
-		"default_fontsize" : 12.0,
-		"default_fontface" : 0,
-		"default_fontname" : "Arial",
-		"gridonopen" : 1,
+		"rect" : [ 267.0, 100.0, 861.0, 789.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 1,
-		"objectsnaponopen" : 1,
-		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
-		"lefttoolbarpinned" : 0,
-		"toptoolbarpinned" : 0,
-		"righttoolbarpinned" : 0,
-		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 0,
-		"tallnewobj" : 0,
-		"boxanimatetime" : 200,
-		"enablehscroll" : 1,
-		"enablevscroll" : 1,
-		"devicewidth" : 0.0,
-		"description" : "",
-		"digest" : "",
-		"tags" : "",
-		"style" : "",
-		"subpatcher_template" : "",
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-48",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 144.0, 619.0, 41.0, 22.0 ],
+					"text" : "loop 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-46",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 360.0, 611.0, 43.0, 22.0 ],
+					"text" : "!- 360."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-42",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 360.0, 709.0, 141.0, 22.0 ],
+					"text" : "pack f f f"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-41",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 360.0, 740.0, 115.0, 22.0 ],
+					"text" : "prepend /orientation"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 308.0, 59.0, 154.0, 22.0 ],
+					"text" : "/unreal/ready"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 443.0, 23.0, 97.0, 22.0 ],
+					"text" : "udpreceive 7001"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 360.0, 768.0, 138.0, 22.0 ],
+					"text" : "udpsend 127.0.0.1 8008"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-5",
 					"linecount" : 3,
@@ -47,30 +104,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 65.0, 495.0, 150.0, 47.0 ],
 					"text" : "Nicht wundern 1. Audio upload ist muted, Erklärung im Code"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-21",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 12.0, 342.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-40",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 588.0, 548.0, 244.0, 22.0 ],
-					"text" : "-2.4 1.9 10.5 -0.1 -0.3 1.2 -14.2 -2 -1.4"
 				}
 
 			}
@@ -95,11 +128,12 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 482.0, 583.0, 50.0, 63.0 ],
+					"patching_rect" : [ 482.0, 634.0, 50.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.dial[2]",
-							"parameter_mmax" : 360.0,
+							"parameter_mmax" : 60.0,
+							"parameter_mmin" : -60.0,
 							"parameter_modmode" : 3,
 							"parameter_shortname" : "live.dial",
 							"parameter_type" : 0,
@@ -121,11 +155,12 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 421.0, 583.0, 50.0, 63.0 ],
+					"patching_rect" : [ 421.0, 634.0, 50.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.dial[1]",
-							"parameter_mmax" : 100.0,
+							"parameter_mmax" : 60.0,
+							"parameter_mmin" : -60.0,
 							"parameter_modmode" : 3,
 							"parameter_shortname" : "live.dial",
 							"parameter_type" : 0,
@@ -147,7 +182,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 360.0, 583.0, 50.0, 63.0 ],
+					"patching_rect" : [ 360.0, 634.0, 50.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.dial",
@@ -171,7 +206,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "float", "float", "float" ],
-					"patching_rect" : [ 360.0, 538.0, 141.0, 22.0 ],
+					"patching_rect" : [ 360.0, 528.0, 141.0, 22.0 ],
 					"text" : "unpack f f f"
 				}
 
@@ -207,7 +242,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 211.0, 649.0, 55.0, 22.0 ],
+					"patching_rect" : [ 214.0, 798.0, 55.0, 22.0 ],
 					"text" : "pipe 300"
 				}
 
@@ -219,7 +254,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 324.0, 687.0, 35.0, 22.0 ],
+					"patching_rect" : [ 327.0, 836.0, 35.0, 22.0 ],
 					"text" : "clear"
 				}
 
@@ -242,7 +277,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 211.0, 687.0, 111.0, 22.0 ],
+					"patching_rect" : [ 214.0, 836.0, 111.0, 22.0 ],
 					"text" : "clear, append $1, 1"
 				}
 
@@ -251,7 +286,18 @@
 				"box" : 				{
 					"clipheight" : 36.0,
 					"data" : 					{
-						"clips" : [  ]
+						"clips" : [ 							{
+								"absolutepath" : "VID_20250324_143151.mp4",
+								"filename" : "VID_20250324_143151.mp4",
+								"filekind" : "moviefile",
+								"id" : "u357005385",
+								"loop" : 1,
+								"content_state" : 								{
+									"loop" : 1
+								}
+
+							}
+ ]
 					}
 ,
 					"drawto" : "",
@@ -263,7 +309,38 @@
 					"outlettype" : [ "jit_matrix", "", "dictionary" ],
 					"output_texture" : 0,
 					"parameter_enable" : 0,
-					"patching_rect" : [ 211.0, 737.0, 448.0, 37.0 ]
+					"patching_rect" : [ 214.0, 886.0, 448.0, 37.0 ],
+					"saved_attribute_attributes" : 					{
+						"candicane2" : 						{
+							"expression" : ""
+						}
+,
+						"candicane3" : 						{
+							"expression" : ""
+						}
+,
+						"candicane4" : 						{
+							"expression" : ""
+						}
+,
+						"candicane5" : 						{
+							"expression" : ""
+						}
+,
+						"candicane6" : 						{
+							"expression" : ""
+						}
+,
+						"candicane7" : 						{
+							"expression" : ""
+						}
+,
+						"candicane8" : 						{
+							"expression" : ""
+						}
+
+					}
+
 				}
 
 			}
@@ -274,7 +351,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 211.0, 799.0, 342.0, 180.0 ],
+					"patching_rect" : [ 214.0, 948.0, 342.0, 180.0 ],
 					"sync" : 1
 				}
 
@@ -487,7 +564,14 @@
 						"watch" : 0
 					}
 ,
-					"text" : "node.script index.js"
+					"text" : "node.script index.js",
+					"textfile" : 					{
+						"filename" : "index.js",
+						"flags" : 0,
+						"embed" : 0,
+						"autowatch" : 1
+					}
+
 				}
 
 			}
@@ -509,16 +593,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
-					"order" : 1,
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"order" : 0,
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -585,6 +660,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-36", 1 ],
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
 					"source" : [ "obj-25", 1 ]
 				}
@@ -614,13 +696,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-33", 0 ],
-					"source" : [ "obj-30", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
 					"source" : [ "obj-30", 1 ]
 				}
@@ -635,8 +710,57 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-40", 1 ],
-					"source" : [ "obj-38", 1 ]
+					"destination" : [ "obj-46", 0 ],
+					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 1 ],
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 2 ],
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"source" : [ "obj-46", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-48", 0 ]
 				}
 
 			}
@@ -697,6 +821,7 @@
 
 			}
  ],
+		"originid" : "pat-4",
 		"parameters" : 		{
 			"obj-14" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-33" : [ "live.dial", "live.dial", 0 ],
@@ -715,6 +840,13 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "VID_20250324_143151.mp4",
+				"bootpath" : "~/Documents/GitHub/handyworkshop/uploads",
+				"patcherrelativepath" : "./uploads",
+				"type" : "mpg4",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "fit_jweb_to_bounds.js",
 				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
 				"type" : "TEXT",

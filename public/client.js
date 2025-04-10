@@ -99,8 +99,6 @@ let mediaRecorder;
 let audioChunks = [];
 
 
-
-
 /*
   NB!
   In diesem Teil kommen oft async / await vor. Dies bezeichnet asynchrones Programmieren in Javascript,
