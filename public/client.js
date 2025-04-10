@@ -119,7 +119,7 @@ let audioChunks = [];
 // Startet den Aufnahme Prozess wenn ein User auf den Aufnahme Button drückt
 async function handleRecordStart() {
     document.body.style.backgroundColor = "red";
-    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true }); // Diese Zeile löst eine "Erlaubnis-Abfrage" auf den Handys aus
     mediaRecorder = new MediaRecorder(stream);
   
     audioChunks = [];

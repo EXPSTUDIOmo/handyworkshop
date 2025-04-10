@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 267.0, 100.0, 861.0, 789.0 ],
+		"rect" : [ 267.0, 100.0, 861.0, 788.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -31,7 +31,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 360.0, 611.0, 43.0, 22.0 ],
+					"patching_rect" : [ 408.666666666666686, 609.0, 43.0, 22.0 ],
 					"text" : "!- 360."
 				}
 
@@ -43,7 +43,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 360.0, 709.0, 141.0, 22.0 ],
+					"patching_rect" : [ 408.666666666666686, 707.0, 141.0, 22.0 ],
 					"text" : "pack f f f"
 				}
 
@@ -55,32 +55,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 360.0, 740.0, 115.0, 22.0 ],
+					"patching_rect" : [ 408.666666666666686, 738.0, 115.0, 22.0 ],
 					"text" : "prepend /orientation"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-36",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 308.0, 59.0, 154.0, 22.0 ],
-					"text" : "/unreal/ready"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-22",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 443.0, 23.0, 97.0, 22.0 ],
-					"text" : "udpreceive 7001"
 				}
 
 			}
@@ -90,7 +66,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 360.0, 768.0, 138.0, 22.0 ],
+					"patching_rect" : [ 408.666666666666686, 766.0, 138.0, 22.0 ],
 					"text" : "udpsend 127.0.0.1 8008"
 				}
 
@@ -103,7 +79,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 65.0, 495.0, 150.0, 47.0 ],
-					"text" : "Nicht wundern 1. Audio upload ist muted, Erklärung im Code"
+					"text" : "Nicht wundern 1. Audio upload ist evtl. muted, Erklärung im Code"
 				}
 
 			}
@@ -114,7 +90,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 533.0, 486.0, 55.0, 22.0 ],
+					"patching_rect" : [ 631.0, 520.0, 55.0, 22.0 ],
 					"text" : "zl.slice 1"
 				}
 
@@ -128,7 +104,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 482.0, 634.0, 50.0, 63.0 ],
+					"patching_rect" : [ 530.666666666666742, 632.0, 50.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.dial[2]",
@@ -155,7 +131,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 421.0, 634.0, 50.0, 63.0 ],
+					"patching_rect" : [ 469.666666666666686, 632.0, 50.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.dial[1]",
@@ -182,7 +158,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 360.0, 634.0, 50.0, 63.0 ],
+					"patching_rect" : [ 408.666666666666686, 632.0, 50.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.dial",
@@ -206,7 +182,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "float", "float", "float" ],
-					"patching_rect" : [ 360.0, 528.0, 141.0, 22.0 ],
+					"patching_rect" : [ 408.666666666666686, 526.0, 141.0, 22.0 ],
 					"text" : "unpack f f f"
 				}
 
@@ -218,7 +194,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 324.0, 497.0, 55.0, 22.0 ],
+					"patching_rect" : [ 372.666666666666686, 495.0, 55.0, 22.0 ],
 					"text" : "zl.slice 1"
 				}
 
@@ -230,8 +206,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 114.0, 245.0, 265.0, 33.0 ],
-					"text" : "Lieber in VS Code ausführen, geht aber theoretisch auch hier"
+					"patching_rect" : [ 74.0, 159.0, 265.0, 33.0 ],
+					"text" : "Installiert die Libraries, entweder hier oder im Terminal ausführen"
 				}
 
 			}
@@ -286,18 +262,7 @@
 				"box" : 				{
 					"clipheight" : 36.0,
 					"data" : 					{
-						"clips" : [ 							{
-								"absolutepath" : "VID_20250324_143151.mp4",
-								"filename" : "VID_20250324_143151.mp4",
-								"filekind" : "moviefile",
-								"id" : "u357005385",
-								"loop" : 1,
-								"content_state" : 								{
-									"loop" : 1
-								}
-
-							}
- ]
+						"clips" : [  ]
 					}
 ,
 					"drawto" : "",
@@ -485,8 +450,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 165.0, 280.0, 149.0, 22.0 ],
-					"text" : "script npm install socket.io"
+					"patching_rect" : [ 74.0, 194.0, 290.0, 22.0 ],
+					"text" : "script npm install socket.io, script npm install express"
 				}
 
 			}
@@ -559,8 +524,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -655,13 +618,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-2", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-36", 1 ],
-					"source" : [ "obj-22", 0 ]
 				}
 
 			}
@@ -821,7 +777,7 @@
 
 			}
  ],
-		"originid" : "pat-4",
+		"originid" : "pat-36218",
 		"parameters" : 		{
 			"obj-14" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-33" : [ "live.dial", "live.dial", 0 ],
@@ -840,13 +796,6 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "VID_20250324_143151.mp4",
-				"bootpath" : "~/Documents/GitHub/handyworkshop/uploads",
-				"patcherrelativepath" : "./uploads",
-				"type" : "mpg4",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "fit_jweb_to_bounds.js",
 				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
 				"type" : "TEXT",

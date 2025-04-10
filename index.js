@@ -45,7 +45,7 @@ let httpServer = http.createServer(app);
 
 const PORT = 5005
 httpServer.listen(PORT, () => {
-    console.log("HTTP Server ist aktiv und wartet auf Kunden auf Port ", PORT)
+    console.log("HTTP Server ist aktiv und wartet auf Port ", PORT)
 });
 
 
@@ -142,7 +142,7 @@ socketIO.on('connection', (socket) => {
 /*
 ------------------------------------ ! DANGER AFTER THIS POINT ! -------------------------------------
 ------------------------------------ ! DANGER AFTER THIS POINT ! -------------------------------------
-Hier kommen Speezialanwendungen die NICHT im Workshop besprochen wurden, namentlich wie man Mikrophon, Kamera und 
+Hier kommen Spezialanwendungen die NICHT im Workshop besprochen wurden, namentlich wie man Mikrophon, Kamera und 
 Bewegungs-Sensoren der Handys verarbeitet.
 
 
